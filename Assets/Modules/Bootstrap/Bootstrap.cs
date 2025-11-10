@@ -14,7 +14,8 @@ namespace Modules.Bootstrap
         {
             try
             {
-                await _sceneLoader.LoadSceneAsync("Main");
+                Debug.Log("Starting bootstrap");
+                await _sceneLoader.LoadSceneAsync("_Main");
             }
             catch (Exception e)
             {
