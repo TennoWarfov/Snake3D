@@ -1,3 +1,4 @@
+using Modules.Input;
 using Zenject;
 
 namespace Modules.DI
@@ -6,7 +7,13 @@ namespace Modules.DI
     {
         public override void InstallBindings()
         {
-            
+            InstallInputSystem();
+        }
+
+        private void InstallInputSystem()
+        {
+            InputSystem input = new();
+            Container.Bind<InputSystem>().FromInstance(input).AsSingle();
         }
     }
 }
