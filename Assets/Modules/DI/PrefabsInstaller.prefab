@@ -45,3 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bootstrapPrefab: {fileID: 5406776290162302563, guid: b9318d63304c19847b94bc773eb245d6, type: 3}
+  playerPrefab: {fileID: 2622452763506868620, guid: f2071511f3990fc4391e34a19e75daa1, type: 3}

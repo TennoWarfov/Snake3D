@@ -1,4 +1,4 @@
 {
 	"name": "Modules.Di",
-	"references":[ "GUID:0d8beb7f090555447a6cf5ce9e54dbb4", "GUID:bbb2292ab1794e2197c736af5eceeb28", "GUID:7448142cc54a4b749b306f41f7d2bc6d", "GUID:90d9e88eafed43d4a200090f187f2a20" ]
+	"references":[ "GUID:0d8beb7f090555447a6cf5ce9e54dbb4", "GUID:bbb2292ab1794e2197c736af5eceeb28", "GUID:7448142cc54a4b749b306f41f7d2bc6d", "GUID:90d9e88eafed43d4a200090f187f2a20", "GUID:3c6e5876babc264488f571c3d8c4d69a" ]
 }

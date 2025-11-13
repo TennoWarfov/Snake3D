@@ -1,4 +1,5 @@
 ﻿using System;
+using Modules.Input;
 using Modules.SceneController;
 using UnityEngine;
 using Zenject;
@@ -10,17 +11,25 @@ namespace Modules.Bootstrap
         [Inject]
         private SceneLoader _sceneLoader;
 
+        [Inject]
+        private InputSystem _inputSystem;
+
         private async void Start()
         {
             try
             {
-                Debug.Log("Starting bootstrap");
                 await _sceneLoader.LoadSceneAsync("_Main");
             }
             catch (Exception e)
             {
                 Debug.LogError(e.ToString()); // TODO handle exception
             }
+        }
+
+        private void OnDestroy()
+        {
+            _inputSystem?.Dispose();
+            _inputSystem = null;
         }
     }
 }

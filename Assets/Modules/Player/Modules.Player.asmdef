@@ -1,7 +1,10 @@
 {
     "name": "Modules.Player",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:bbb2292ab1794e2197c736af5eceeb28",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
