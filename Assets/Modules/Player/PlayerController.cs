@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace MainContent
+namespace Modules.Player
 {
     public class PlayerController : MonoBehaviour
     {
