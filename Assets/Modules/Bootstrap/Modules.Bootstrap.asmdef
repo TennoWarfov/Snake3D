@@ -1,4 +1,20 @@
-﻿{
-  "name": "Modules.Bootstrap",
-  "references":[ "GUID:90d9e88eafed43d4a200090f187f2a20", "GUID:f51ebe6a0ceec4240a699833d6309b23", "GUID:bbb2292ab1794e2197c736af5eceeb28" ]
+{
+    "name": "Modules.Bootstrap",
+    "rootNamespace": "",
+    "references": [
+        "GUID:90d9e88eafed43d4a200090f187f2a20",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:bbb2292ab1794e2197c736af5eceeb28",
+        "GUID:16f55dfd49f3b694bab70fdad220587f",
+        "GUID:cb155cfc593887146861d3837c4acdb6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

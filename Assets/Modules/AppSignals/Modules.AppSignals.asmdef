@@ -1,10 +1,7 @@
 {
-    "name": "Modules.Player",
+    "name": "Modules.Signals",
     "rootNamespace": "",
     "references": [
-        "GUID:bbb2292ab1794e2197c736af5eceeb28",
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:cb155cfc593887146861d3837c4acdb6",
         "GUID:16f55dfd49f3b694bab70fdad220587f"
     ],
     "includePlatforms": [],

@@ -96,7 +96,6 @@ GameObject:
   m_Component:
   - component: {fileID: 93394927886582495}
   - component: {fileID: 2622452763506868620}
-  - component: {fileID: 5717186260617680285}
   m_Layer: 2
   m_Name: PlayerController
   m_TagString: Untagged
@@ -132,36 +131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021eb38e0d031ba468313f4dda3c0d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rideHeight: 1
-  rideSpringStrength: 4
-  rideSpringDamper: 0.1
---- !u!54 &5717186260617680285
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2243612653111799699}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 2
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  movementSpeed: 5
+  rotationSpeed: 180
+  bodySpeed: 5
+  gap: 10
+  root: {fileID: 1637420742822442951}
+  bodyPartPrefab: {fileID: 901692836458812688, guid: e09f4f41648b912498ffaa296137fb45, type: 3}
 --- !u!1 &2349611472701502766
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +343,7 @@ GameObject:
   - component: {fileID: 7109753685024125475}
   - component: {fileID: 7515794690534048306}
   - component: {fileID: 7766987688545498966}
+  - component: {fileID: 3403268223654292337}
   m_Layer: 2
   m_Name: Cube
   m_TagString: Untagged
@@ -467,3 +443,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3403268223654292337
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4500470252270279410}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

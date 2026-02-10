@@ -1,6 +1,8 @@
 ﻿using System;
+using Modules.AppSignals;
 using Modules.Input;
 using Modules.SceneController;
+using Supyrb;
 using UnityEngine;
 using Zenject;
 
@@ -19,6 +21,8 @@ namespace Modules.Bootstrap
             try
             {
                 await _sceneLoader.LoadSceneAsync("_Main");
+
+                Signals.Get<GlobalSignals.AppInitializedSignal>().Dispatch();
             }
             catch (Exception e)
             {

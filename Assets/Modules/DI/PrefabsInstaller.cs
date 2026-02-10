@@ -44,7 +44,6 @@ namespace Modules.DI
         private void InstallPlayer()
         {
             var player = Container.InstantiatePrefab(playerPrefab);
-            player.transform.position = new Vector3(0f, 1f, 0f);
             Container
                 .Bind<PlayerController>()
                 .FromInstance(player.GetComponent<PlayerController>())
